@@ -6,7 +6,10 @@
   "scripts": {
     "start": "webpack --mode=development",
     "prod": "webpack --mode=production",
-    "dev": "webpack-dev-server --mode=development"
+
+    "dev": "webpack-dev-server --mode=development",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/mrSerGL/webpack-training-todo_list/issues"
   },
-  "homepage": "https://github.com/mrSerGL/webpack-training-todo_list#readme",
+  "homepage": "https://github.com/mrSerGL/webpack-training-todo_list",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/eslint-parser": "^7.19.1",
@@ -29,6 +32,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-webpack-plugin": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "^2.8.4",
